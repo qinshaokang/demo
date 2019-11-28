@@ -16,6 +16,7 @@ public class Demo {
     public static void main(String[] args) throws InterruptedException {
         Demo demo = new Demo();
         new Thread(demo::insert).start();
+        Thread.sleep(1000);
         new Thread(demo::insert).start();
     }
 
